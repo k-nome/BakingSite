@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain) */
 
-
+/* ------------------ PAGE RESET ----------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,51 +47,8 @@ table {
 	border-spacing: 0;
 } 
 
+/* ------------------ END PAGE RESET ----------------------*/
 
-
-
-
-body {
-	background-color:#fff;
-	font-family: 'Josefin Slab', serif;
-}
-
-nav {
-	display: inline-block;
-	/*border:1px solid #ccc;
-	border-radius:10px;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;*/
-}
-ul {
-	list-style-type: none;
-	padding: 0.5em;
-	margin: 0;
-}
-li {
-	display: inline;
-}
-
-a:visited {
-	color: #000;
-}
-#linebr {
-	margin: 1em;
-	border-bottom: 1px dotted #999; /*3px on small screen*/
-}
-
-#content {
-	width:60%;
-	margin:5% auto 0;
-	background-color:#4c5cf3;
-	border-radius:10px;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	/*padding:20px 15px;
-	border:7px solid #ccc;
-	border-bottom:10px solid #999;
-	border-top:5px solid #ddd; */
-}
 
 @media screen and (max-width: 750px) {
 	#content {
@@ -108,7 +65,6 @@ a:visited {
 		margin-bottom: 2em;
 	}
 }
-
 /* currently on site 
 @media screen and (width < 750px) {
 	#content {
@@ -157,11 +113,12 @@ a:visited {
 	}
 }
 
-#content h1 {	
-	font-family: 'Ostrich Sans', serif;
-	font-weight: bold; 
-	font-size: 3em;
+body {
+	background-color:#fff;
+	font-family: 'Josefin Slab', serif;
 }
+
+/* ------------------ MENU -------------------*/
 header h1 {	
 	font-family: 'Ostrich Sans', serif;
 	font-size: 5em;
@@ -169,7 +126,58 @@ header h1 {
 	padding-left: 2%; 
 }
 
+nav {
+	display: inline-block;
+	/*border:1px solid #ccc;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;*/
+}
+ul {
+	list-style-type: none;
+	padding: 0.5em;
+	margin: 0;
+}
 
+li {
+	display: inline;
+}
+
+a:visited {
+	color: #000;
+}
+
+/* ------------------ END MENU -------------------*/
+
+#linebr {
+	margin: 1em;
+	border-bottom: 1px dotted #999; /*3px on small screen*/
+}
+
+/* ------------------ CONTENT WRAP -------------------*/
+#content {
+	width:60%;
+	margin:5% auto 0;
+	background-color:#FFF;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	/*padding:20px 15px;
+	border:7px solid #ccc;
+	border-bottom:10px solid #999;
+	border-top:5px solid #ddd; */
+}
+
+
+#content h1 {	
+	font-family: 'Ostrich Sans', serif;
+	font-weight: bold; 
+	font-size: 3em;
+}
+
+/* ------------------ END CONTENT WRAP -------------------*/
+
+/* ------------------ CONVERSION BLOCKS -------------------*/
 article {
 	background-color: #bdc0fe;
 	padding: 1em;
@@ -226,6 +234,8 @@ select{
 	font-family: 'Josefin Slab', serif;
 	max-width: 3em;
 }
+
+/* ------------------ END CONVERSION BLOCK -------------------*/
 
 footer {
 	margin: 0;
